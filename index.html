@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aarushi Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/def157a55f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <div class="container">
+        <nav>
+            <img src="images/logo1.png" class="logo" alt="Logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#portfolio">Accomplishments</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Personal Image and Text Section -->
+        <div class="header-content">
+            <div class="header-text">
+                <h1 id="main-text">Hi, I'm <span>Aarushi Dhawan</span></h1>
+                <p id="sub-text">Data Science and Software Engineering Enthusiast</p>
+            </div>
+            <img src="images/bg2.jpg" alt="Aarushi" class="personal-image">
+        </div>
+    </div>
+    <!-------------------------------------------------------------ABOUT------------------------------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/abt.jpeg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>As a BTech CSE student at Symbiosis Institute of Technology, I thrive on creativity and
+                        innovation.
+                        I am passionate about exploring the world of data science and delving into complex datasets
+                        to find valuable insights. I take initiative and see challenges as chances to grow, striving
+                        to be a proactive and dynamic team leader. I have had the opportunity to lead numerous group
+                        projects, both in college and in school, ranging from basic science posters to
+                        complex problem-solving tasks like developing software applications.
+                        With a keen eye for fashion, I incorporate design thinking into everything I do.
+                        I am eager to explore new opportunities and learn at every step.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming:</span><br>C, C++, Java, Python, OOPs</li>
+                            <li><span>Data Analysis:</span><br>SQL, MySQL, R, Pandas, Numpy, BeautifulSoup, PowerBI,
+                                Tableau</li>
+                            <li><span>Web Development:</span><br>HTML, CSS, JS</li>
+                            <li><span>Methodologies and Frameworks:</span><br>Agile, Scrum, GDAL, CUDA</li>
+                            <li><span>Soft Skills:</span><br>Team Management, Leadership, Design Thinking, Public
+                                Speaking, Event Management</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Research Intern</span><br>Defence Research and Development Organisation (DRDO)
+                                (Jun 2024- Aug 2024)</li>
+                            <li><span>Intern</span><br>TIC Council (Jun 2023- Jul 2023)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.Tech in Computer Science</span><br>Symbiosis Institute of Technology, Pune
+                                (2022-2026)</li>
+                            <li><span>High School Diploma</span><br>Mater Dei School, New Delhi (2012-2022)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="certifications">
+                        <ul>
+                            <li>Google Data Analytics Professional Certificate<span>-Coursera</span></li>
+                            <li>Microsoft Azure AI Fundamentals<span>-Microsoft</span></li>
+                            <li>Google Agile Project Management<span>-Coursera</span></li>
+                            <li>OOPs in Java<span>-Great Learning</span></li>
+                            <li>Google Business Intelligence Professional Certificate<span>-Coursera</span></li>
+                            <li>Business Analysis and Process Management<span>-Coursera</span></li>
+                            <li>Codio’s Intro to Operating Systems 2-Memory Management<span>-Coursera</span></li>
+                            <li>Postman API Fundamentals Student Expert<span>-Canvas Badges</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------------------------------------------------------PROJECTS----------------------------------------------------------->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="projects-list">
+                <div class="project-card">
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Symbiosis Classifieds</h2>
+                    <p>
+                        Developed in Java JDBC and MySQL on NetBeans, this app addresses college students' needs for
+                        housing and secondhand sales, emphasizing a streamlined user experience and efficient
+                        database management.</p>
+                    <a href="https://github.com/aarushidhawan/Symbiosis-Classifieds">Learn More</a>
+                </div>
+                <div class="project-card">
+                    <i class="fa-brands fa-android"></i>
+                    <h2>CamSecure: A GPS-Based Camera Access and Device Locking Application</h2>
+                    <p>Developed an Android app that locks devices instantly if the camera is accessed in
+                        restricted
+                        locations, using GPS and Wi-Fi geofencing to enhance user security by automating
+                        location-based
+                        camera permissions.</p>
+                    <a href="https://github.com/aarushidhawan/CamSecure">Learn More</a>
+                </div>
+                <div class="project-card">
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Amazon Web Scraper</h2>
+                    <p>Developed a web scraper using Python, Beautiful Soup, Pandas and Requests to extract data
+                        about
+                        IPhones from Amazon, automating data collection for analysis.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------------------------------------------------ACHIEVEMENTS----------------------------------------------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Co-Curricular Achievements</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/s2.png">
+                    <div class="layer">
+                        <h3>Research Paper Contribution on Cybersecurity Standards</h3>
+                        <p> Co-authored a paper with the TIC Council, mapping global standards in cybersecurity
+                            frameworks.</p>
+                        <a
+                            href="https://www.tic-council.org/application/files/7917/0835/0656/TIC_Council_India_Position_Paper_Cyber_Security.pdf"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/s5.png">
+                    <div class="layer">
+                        <h3>Mental Health Champion at Symbiosis Centre for Emotional Wellbeing</h3>
+                        <p>
+                            Facilitated events with Symbiosis Centre for Emotional Well-Being (SCEW) to promote mental
+                            health awareness and peer support by provision of Psychological First Aid</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/s3.png">
+                    <div class="layer">
+                        <h3>Top 0.1% Scorer in Maths and Science and Olympiad Medalist by CBSE</h3>
+                        <p>Awarded a certificate by CBSE for academic excellence. Won multiple medals in national and
+                            international Olympiads, showcasing a strong academic background in various subjects.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/s4.png">
+                    <div class="layer">
+                        <h3>Development of Advanced Parallel Processing Programs</h3>
+                        <p>During my internship experience at DRDO, I worked on enhancing computational efficiency in
+                            defense projects through CUDA and Python, demonstrating technical and problem-solving
+                            skills.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------------------------------------------------CONTACT----------------------------------------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>aarushidhawan05@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 9310880395</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/aarushi-dhawan-89a084210/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/aarushidhawan"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/Aarushi_Dhawan_Resume (3).pdf" download class="btn">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Aarushi Dhawan</p>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwWuUr7gxNfeSe0UfuXEdDpRAPX4-ywy9YKtGLHs06-LALQUn01zqiERTf9ojV1IeaP/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message Sent Successfully!"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 50000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
